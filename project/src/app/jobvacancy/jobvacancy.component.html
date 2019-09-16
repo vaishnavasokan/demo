@@ -1,0 +1,54 @@
+
+<app-header></app-header>
+
+
+<section class="custom-container-index" style="border: 1px solid black;">
+    <h2 style="color:black; text-align: center;">POST JOB VACANCY</h2>
+    <form style="position: relative; background: #ffb3b3; margin: 0 auto 100px; padding: 45px; text-align: center; max-width: 900px; z-index: 1; ">
+        <div class="row">
+            <div class="col">
+                    <table>
+                            <tr>
+                                <td>Company Name </td>
+                                <td><input type="text"  name="cname" [(ngModel)]="cname" required></td>
+                    
+                            </tr>
+                            <tr>
+                                <td>Contact Person </td>
+                                <td><input type="text" name="cperson" [(ngModel)]="cperson" required></td>
+                            </tr>
+                            <tr>
+                                <td>Email </td>
+                                <td><input type="text" name="email" [(ngModel)]="email" required></td>     
+                            </tr>
+                            <tr>
+                                <td>Website </td>
+                                <td><input type="text" name="website" style="margin: 10px" [(ngModel)]="website" required ></td>
+                            </tr>
+                    </table>
+            </div>
+            <div class="col">
+                <table>
+                    <tr>
+                        <td>Company Address </td>
+                        <td><input type="text" name="address" [(ngModel)]="address" required></td>
+                    </tr>
+
+                    <tr>
+                        <td>Designation </td>
+                        <td><input type="text" name="dsn" [(ngModel)]="dsn" required></td>
+                    </tr>
+                    <tr>
+                                                              
+                        <td>Mobile Number </td>
+                        <td><input type="text" name="mobno" [(ngModel)]="mobno" required></td>
+                    </tr>
+                </table>
+            </div>
+        </div> 
+    </form>
+</section>
+
+<app-footer></app-footer>
+      
+

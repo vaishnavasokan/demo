@@ -1,0 +1,48 @@
+
+<app-header></app-header>
+
+
+<section class="custom-container-index" style="border: 1px solid black;">
+        
+            <h2 style="color:black; text-align: center;">REGISTER</h2>
+            <div class="col col-4"></div>
+            <div class="col col-4"></div>
+            
+                <form style="position: relative; background: #ffb3b3; margin: 0 auto 100px; padding: 45px; text-align: center; max-width: 450px; z-index: 1; ">
+
+                                    <table>
+                                        <tr>
+                                            <td>Name </td>
+                                            <td><input type="text"  name="name" [(ngModel)]="uname" required></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Email ID </td>
+                                            <td><input type="text" name="email" [(ngModel)]="email" required><label style="font-family: Verdana; color: red">*email will be your username</label></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Create Password </td>
+                                            <td><input type="password" name="pswd" [(ngModel)]="pswd" required></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Mobile Number </td>
+                                            <td><input type="text" name="mobno" [(ngModel)]="mobno" required></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Current Location </td>
+                                            <td><input type="text" name="location" [(ngModel)]="location" required></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Upload resume </td>
+                                            <td><input type="file" name="udoc" style="margin: 10px" [(ngModel)]="resume" required ></td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td><input type="button" class="waves-effect waves-light btn" value="Register Now" (click)="register()" ></td>
+                                        </tr>
+                                    </table>
+                    </form>
+                
+            </section>
+
+<app-footer></app-footer>
+      
